@@ -23,6 +23,11 @@ local function sortByType(type)
 end
 
 --Public
+function getNetworkConnected()
+    local network = {["monitors"] = sortByType("monitors")}
+
+    return network
+end
 
 -->RETURN<--
-return {}
+return {getNetworkConnected = getNetworkConnected}
